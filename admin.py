@@ -1,5 +1,5 @@
 #sku/admin.py 
-#Automaticly Generated at 20121010094227
+#Automaticly Generated at 20121012151412
 from django.contrib import admin 
 from sku.models import Sku
 admin.site.register(Sku) 

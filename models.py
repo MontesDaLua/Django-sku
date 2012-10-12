@@ -63,5 +63,3 @@ class Barcode(models.Model):
             s = Barcode( Sku= l ,   BarCode = "560" + str(x), Multiplier = 1 )
             s.save()
             x=x+1
-    
-	
