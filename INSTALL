@@ -1,8 +1,12 @@
+Git INSTALLING
+Download tgz from https://github.com/MontesDaLua/Django-sku/tarball/master"
+untar in your site root url
 
+add to your urls.py
 
-INSTALL contents 
-
-
-Download tgz from https://github.com/MontesDaLua/Django-sku/tarball/master
-add to your urls.py 
     (r'^sku/', include('sku.urls')),
+
+add sku to settings.py
+ in INSTALLED_APPS
+restart apache ( eg: sudo service apache2 reload )
+
