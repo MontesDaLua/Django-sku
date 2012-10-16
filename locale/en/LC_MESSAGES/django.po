@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-12 23:28+0100\n"
+"POT-Creation-Date: 2012-10-16 08:09+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,22 +17,70 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: templates/detail_sku.html:4
+#: templates/500.html:5
+msgid "Internal Error"
+msgstr ""
+
+#: templates/500.html:10
+msgid "Internal Server Error"
+msgstr ""
+
+#: templates/base.html:10 templates/detail_sku.html:10
 msgid "display sku"
 msgstr "display sku(en)"
 
-#: templates/detail_sku.html:7
+#: templates/base.html:58 templates/detail_sku.html:58
+#: templates/sku-ver.html:50
 msgid "Internal COde"
 msgstr ""
 
-#: templates/detail_sku.html:9
+#: templates/base.html:59 templates/detail_sku.html:59
+#: templates/sku-ver.html:53
 msgid "Movement Unit"
 msgstr ""
 
-#: templates/detail_sku.html:11
+#: templates/base.html:60 templates/detail_sku.html:60
+#: templates/sku-ver.html:54
 msgid "Id in Data Base "
 msgstr ""
 
-#: templates/detail_sku.html:12
-msgid "Bye Bye"
+#: templates/sku-ver.html:5
+#, fuzzy
+msgid "display ====sku"
+msgstr "display sku(en)"
+
+#: templates/sku-ver.html:13
+msgid "You are not logged in."
+msgstr ""
+
+#: templates/sku-ver.html:14
+msgid "Login"
+msgstr ""
+
+#: templates/sku-ver.html:16
+msgid "user"
+msgstr ""
+
+#: templates/sku-ver.html:18
+msgid "Log out"
+msgstr ""
+
+#: templates/sku-ver.html:25
+msgid "Home"
+msgstr ""
+
+#: templates/sku-ver.html:26
+msgid "Admin"
+msgstr ""
+
+#: templates/sku-ver.html:51
+msgid "Short Description"
+msgstr ""
+
+#: templates/sku-ver.html:52
+msgid "Description"
+msgstr ""
+
+#: templates/sku-ver.html:64
+msgid "florida web design"
 msgstr ""

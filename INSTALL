@@ -3,3 +3,6 @@
 INSTALL contents 
 
 
+Download tgz from https://github.com/MontesDaLua/Django-sku/tarball/master
+add to your urls.py 
+    (r'^sku/', include('sku.urls')),
