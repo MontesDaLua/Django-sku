@@ -1,0 +1,65 @@
+{% extends "sku-base.html" %}
+{% load i18n %}
+
+{% block TITULO  %}
+{% trans "display ====sku" %}  {{ sku.id }}
+{% endblock TITULO %}
+
+
+{% block CABECALHO %}
+<h1>Sku<span class="off">app</span></h1>
+<h2>
+{% if user.is_anonymous %} 
+{% trans "You are not logged in." %}
+<a href="/admin/"> {% trans "Login" %} </a>
+{% else %} 
+{% trans "user" %}:
+{{ user.username }}( {{ user.first_name }} {{ user.last_name }} )
+<a href="/admin/logout/"> {% trans "Log out" %} </a>
+{% endif %}
+</h2>
+{% endblock CABECALHO %}
+
+{% block MENUCABECALHO %}
+<ul>
+<li class="menuitem"> <a href="/">       {% trans "Home"  %}  </a></li>
+<li class="menuitem"> <a href="/admin/"> {% trans "Admin" %}  </a></li>
+</ul>
+{% endblock MENUCABECALHO %}
+
+{% block MENUESQTOPO %}
+início menu esquerdo muiiiiiito comprida 
+{% endblock MENUESQTOPO %}
+
+{% block MENUESQCONTEUDO %}
+MEIO MENU ESQUERDO 
+{% endblock MENUESQCONTEUDO %}
+
+{% block MENUESQFIM %}
+FIMMMMMM menu esquerdo muiiiiiito comprida 
+{% endblock MENUESQFIM %}
+
+{% block CONTEUDOTOPO %}
+inicio conteudo topo 
+<hr>
+{% endblock CONTEUDOTOPO %}
+
+{% block CONTEUDO  %}
+<h1> Estática {{ STATIC_URL }} </h1>
+<hr>
+<h1> {% trans "Internal COde" %} {{ sku.IntCode }}</h1>
+<p>{% trans "Short Description" %}: {{ sku.ShortDesc }}<br/>
+<p>{% trans "Description" %}: {{ sku.Desc }}<br/>
+<p>{% trans "Movement Unit" %}: {{ sku.MovUni }}<br/>
+<p>{% trans "Id in Data Base " %} {{ sku.id }}
+<p>very very very  very very  very very  very very  very very  very very  very very  very very  very very  very very  very very  very very  very very  very very  very very  very very  very very  very very  very very  very very  very very  very very  very very  very very  very very  very very  very very  very very  very very  very very  LONGLINE in CONTEUDO BLOCK 
+{% endblock CONTEUDO %}
+
+{% block CONTEUDOFIM %}
+<hr>
+conteudo fim 
+{% endblock CONTEUDOFIM %}
+
+{% block RODAPE %}
+<h3><a href="http://www.bryantsmith.com"> {% trans "florida web design" %} </a></h3>
+{% endblock RODAPE %}

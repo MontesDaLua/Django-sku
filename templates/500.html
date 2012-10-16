@@ -1,0 +1,13 @@
+{% extends "sku-base.html" %}
+{% load i18n %}
+
+{% block TITULO  %}
+{% trans "Internal Error" %}  {{ sku.id }}
+{% endblock TITULO %}
+
+{% block CONTEUDO  %}
+<hr>
+{% trans "Internal Server Error" %}
+<hr>
+{% endblock CONTEUDO %}
+

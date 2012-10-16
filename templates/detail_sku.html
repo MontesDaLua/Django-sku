@@ -1,0 +1,67 @@
+{% load i18n %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--
+<link rel="stylesheet" type="text/css" href="/static/css/sku.css"/>
+-->
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/sku.css"/>
+<title>{% trans "display sku" %}  {{ sku.id }}</title>
+</head>
+
+<body>
+<!-- templates/detail_sku.html -->
+<div id="container">
+		<div id="header">
+        	<h1>Slick<span class="off">Red</span></h1>
+            <h2>A template by Bryant Smith</h2>
+        </div>   
+        
+        <div id="menu">
+        	<ul>
+            	<li class="menuitem"><a href="#">Home</a></li>
+                <li class="menuitem"><a href="#">About</a></li>
+                <li class="menuitem"><a href="#">Products</a></li>
+                <li class="menuitem"><a href="#">Services</a></li>
+                <li class="menuitem"><a href="#">Design</a></li>
+              <li class="menuitem"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        
+        <div id="leftmenu">
+
+        <div id="leftmenu_top"></div>
+
+				<div id="leftmenu_main">    
+                <ul>
+                    <li>option 1</li>
+                    <li>option 2</li>
+                </ul>
+</div>
+                
+                
+              <div id="leftmenu_bottom"></div>
+        </div>
+        
+        
+        
+        
+		<div id="content">
+        
+        
+        <div id="content_top"></div>
+        <div id="content_main">
+<hr>
+<h1> Estática {{ STATIC_URL }} </h1>
+<hr>
+<h1> {% trans "Internal COde" %} {{ sku.IntCode }}</h1>
+<p>{% trans "Movement Unit" %}: {{ sku.MovUni }}<br/>
+<p>{% trans "Id in Data Base " %} {{ sku.id }}
+        </div>
+        <div id="content_bottom"></div>
+            <div id="footer"><h3><a href="http://www.bryantsmith.com">florida web design</a></h3></div>
+      </div>
+   </div>
+</body>
+</html>
