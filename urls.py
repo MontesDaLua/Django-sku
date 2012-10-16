@@ -1,9 +1,7 @@
 # sku app urls.py
 from django.conf.urls.defaults import *
 
-#export APPSTRVIEW="ver"
-
 urlpatterns = patterns('',
-    url(r' ver/(?P<pid>\d+)/$', 'sku.views.ver'),
+    url(r'^ver/(?P<sku_id>\d+)/$', 'sku.views.ver'),
 )
 

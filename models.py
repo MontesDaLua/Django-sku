@@ -13,6 +13,8 @@ class Sku(models.Model):
     )
     IntCode = models.CharField(max_length=20) 
     MovUnit = models.CharField(max_length=3, choices = MOV_CHOICES , default = 'UNI' ) 
+    Desc = models.CharField(max_length=200) 
+    ShortDesc = models.CharField(max_length=40) 
         
     def __unicode__(self): 
         return self.IntCode
@@ -24,26 +26,6 @@ class Sku(models.Model):
             s.save()
             x=x+1
 	
-
-class SkuNames(models.Model): 
-    """
-	base clase for SKu Names 
-    """
-    Sku = models.ForeignKey(Sku) 
-    Desc = models.CharField(max_length=200) 
-    ShortDesc = models.CharField(max_length=40) 
-    Lang = models.CharField(max_length=5, default = 'en-us' ) 
-
-    def __unicode__(self): 
-        return self.Desc
-
-    def LoadSampleData(self,number):
-        x=0
-        while (x<number):
-            s = Sku( IntCode = "COD" + str(x),   MovUnit = 'UNI' )
-            s.save()
-            x=x+1
-
 
 class Barcode(models.Model): 
     """
