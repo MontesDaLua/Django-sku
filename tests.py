@@ -7,6 +7,7 @@ from django.test import TestCase
 from django.test.client import RequestFactory, Client 
 from django.contrib.auth.models import User
 from models import Sku
+import os
 
 class SkuTestCase(unittest.TestCase):
     def setUp(self):
@@ -59,6 +60,10 @@ class SkuTestCase(unittest.TestCase):
 	# Existing sku
 	r = self.c.get('/sku/ver/'+ str(self.sku1.id) +'/')
         self.assertEqual( r.status_code, 200  )
+	of =  os.environ['DEVSITE'] + '/' + os.environ['APP'] + '/' + os.environ['APPSNAPHTMLDIR'] + '/' + 'ver.html'
+	fwrite = open( of ,'w')
+	fwrite.write (r.content);
+	fwrite.close()
 	#
 	# Non Existing sku
 	r = self.c.get('/sku/ver/5555/')
