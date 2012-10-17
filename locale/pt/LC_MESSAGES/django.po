@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-16 16:58+0100\n"
+"POT-Creation-Date: 2012-10-17 16:30+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: templates/404.html:5 templates/404.html.py:10
+msgid "Page Not Found "
+msgstr ""
 
 #: templates/500.html:5
 #, fuzzy
@@ -27,53 +31,47 @@ msgstr "Código Interno"
 msgid "Internal Server Error"
 msgstr ""
 
-#: templates/base.html:10 templates/detail_sku.html:10
-msgid "display sku"
-msgstr "Mostra sku 99"
-
-#: templates/base.html:58 templates/detail_sku.html:58
-#: templates/sku-ver.html:50
-msgid "Internal COde"
-msgstr "Código Interno"
-
-#: templates/base.html:59 templates/detail_sku.html:59
-#: templates/sku-ver.html:53
-msgid "Movement Unit"
-msgstr "Unidade de Movimento"
-
-#: templates/base.html:60 templates/detail_sku.html:60
-#: templates/sku-ver.html:54
-msgid "Id in Data Base "
-msgstr "Id na Base de Dados"
-
-#: templates/sku-ver.html:5
+#: templates/sku-redirect-login.html:5 templates/sku-ver.html:5
 #, fuzzy
 msgid "display ====sku"
 msgstr "Mostra sku 99"
 
-#: templates/sku-ver.html:13
+#: templates/sku-redirect-login.html:13 templates/sku-ver.html:13
 msgid "You are not logged in."
 msgstr ""
 
-#: templates/sku-ver.html:14
+#: templates/sku-redirect-login.html:14 templates/sku-ver.html:14
 msgid "Login"
 msgstr ""
 
-#: templates/sku-ver.html:16
+#: templates/sku-redirect-login.html:16 templates/sku-ver.html:16
 msgid "user"
 msgstr ""
 
-#: templates/sku-ver.html:18
+#: templates/sku-redirect-login.html:18 templates/sku-ver.html:18
 msgid "Log out"
 msgstr ""
 
-#: templates/sku-ver.html:25
+#: templates/sku-redirect-login.html:25 templates/sku-ver.html:25
 msgid "Home"
 msgstr ""
 
-#: templates/sku-ver.html:26
+#: templates/sku-redirect-login.html:26 templates/sku-ver.html:26
 msgid "Admin"
 msgstr ""
+
+#: templates/sku-redirect-login.html:48
+msgid "please login first "
+msgstr ""
+
+#: templates/sku-redirect-login.html:57 templates/sku-ver.html:64
+msgid "florida web design"
+msgstr ""
+
+#: templates/sku-ver.html:50
+#, fuzzy
+msgid "Internal Code"
+msgstr "Código Interno"
 
 #: templates/sku-ver.html:51
 msgid "Short Description"
@@ -83,9 +81,16 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: templates/sku-ver.html:64
-msgid "florida web design"
-msgstr ""
+#: templates/sku-ver.html:53
+msgid "Movement Unit"
+msgstr "Unidade de Movimento"
+
+#: templates/sku-ver.html:54
+msgid "Id in Data Base "
+msgstr "Id na Base de Dados"
+
+#~ msgid "display sku"
+#~ msgstr "Mostra sku 99"
 
 #, fuzzy
 #~ msgid "Bye Bye"
