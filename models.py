@@ -1,8 +1,5 @@
 from django.db import models
 
-#UNI = 1
-#VW = 2
-
 class Sku(models.Model): 
     """
 	base clase for SKu ( Stock Keeping Unit ) 
