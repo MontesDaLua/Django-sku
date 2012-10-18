@@ -56,7 +56,7 @@ class SkuTestCase(unittest.TestCase):
 	self.c.login(username=self.uname, password=self.PASS)
 	r = self.c.get(self.baseurl + self.viewurl + str(self.sku1.id) +'/')
         self.assertEqual( r.status_code, 200  )
-	of =  os.environ['DEVSITE'] + '/' + os.environ['APP'] + '/' + os.environ['APPSNAPHTMLDIR'] + '/' + 'versku-200.html'
+	of =  os.environ['APPTESTNAME'] + '/' + os.environ['APP'] + '/' + os.environ['APPSNAPHTMLDIR'] + '/' + 'versku-200.html'
 	self.c.logout()
 	fwrite = open( of ,'w')
 	fwrite.write (r.content);
@@ -74,7 +74,7 @@ class SkuTestCase(unittest.TestCase):
 	# generic 
 	r = self.c.get('/admin/')
         self.assertEqual( r.status_code, 200  )
-	of =  os.environ['DEVSITE'] + '/' + os.environ['APP'] + '/' + os.environ['APPSNAPHTMLDIR'] + '/' + 'admin.html'
+	of =  os.environ['APPTESTNAME'] + '/' + os.environ['APP'] + '/' + os.environ['APPSNAPHTMLDIR'] + '/' + 'admin.html'
 	fwrite = open( of ,'w')
 	fwrite.write (r.content);
 	fwrite.close()

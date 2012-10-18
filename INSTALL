@@ -9,4 +9,3 @@ add to your urls.py
 add sku to settings.py
  in INSTALLED_APPS
 restart apache ( eg: sudo service apache2 reload )
-
