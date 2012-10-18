@@ -19,14 +19,3 @@ class Sku(models.Model):
     def __unicode__(self): 
         return self.IntCode
 
-class Barcode(models.Model): 
-    """
-	base clase for Bar codes  ( ) 
-    """
-    BarCode = models.CharField(max_length=13) 
-    Sku = models.ForeignKey(Sku) 
-    Multiplier = models.PositiveIntegerField( default = 1) 
-        
-    def __unicode__(self): 
-        return self.BarCode 
-
