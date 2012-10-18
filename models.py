@@ -19,14 +19,6 @@ class Sku(models.Model):
     def __unicode__(self): 
         return self.IntCode
 
-    def LoadSampleData(self,number):
-        x=0
-        while (x<number):
-            s = Sku( IntCode = "COD" + str(x),   MovUnit = 'UNI' )
-            s.save()
-            x=x+1
-	
-
 class Barcode(models.Model): 
     """
 	base clase for Bar codes  ( ) 
@@ -38,10 +30,3 @@ class Barcode(models.Model):
     def __unicode__(self): 
         return self.BarCode 
 
-    def LoadSampleData(self,number):
-        x=0
-        while (x<number):
-            l = Sku.objects.get(IntCode =  "COD" + str(x))
-            s = Barcode( Sku= l ,   BarCode = "560" + str(x), Multiplier = 1 )
-            s.save()
-            x=x+1

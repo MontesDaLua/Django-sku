@@ -12,31 +12,22 @@ import os
 class SkuTestCase(unittest.TestCase):
     def setUp(self):
         self.sku1 = Sku.objects.create( IntCode = "Codigo 1", MovUnit = '', Desc = "Descricao Codigo 1", ShortDesc = "Descricao Curta Codigo 1") 
-        self.sku1.LoadSampleData(10)
         self.c = Client()
         self.uname = 'okuser'
         self.PASS = 'lixo'
-
+	self.baseurl = '/sku/'
+	self.viewurl = 'versku/'
 
 #
 # Database Tests 
 #
 
-    def testDbSku(self):
+    def testDbt1(self):
         """
         Test sky object single creation 
         """
         self.assertEqual(self.sku1.IntCode, 'Codigo 1')
 
-    def testDbLoadSku(self):
-        """
-        Test sky object single creation 
-        """
-
-    def testDbt3(self):
-        """
-        Test sky object single creation 
-        """
 #
 # Web site tests
 #
@@ -54,25 +45,25 @@ class SkuTestCase(unittest.TestCase):
         """
 	#
 	# generic 
-	r = self.c.get('/sku/')
+	r = self.c.get(self.baseurl)
         self.assertEqual( r.status_code, 404  )
 	#
 	# Existing sku non authenticated 
-	r = self.c.get('/sku/ver/'+ str(self.sku1.id) +'/')
+	r = self.c.get(self.baseurl + self.viewurl + str(self.sku1.id) +'/')
         self.assertEqual( r.status_code, 302  )
 	#
 	# Existing sku authenticated 
 	self.c.login(username=self.uname, password=self.PASS)
-	r = self.c.get('/sku/ver/'+ str(self.sku1.id) +'/')
+	r = self.c.get(self.baseurl + self.viewurl + str(self.sku1.id) +'/')
         self.assertEqual( r.status_code, 200  )
-	of =  os.environ['DEVSITE'] + '/' + os.environ['APP'] + '/' + os.environ['APPSNAPHTMLDIR'] + '/' + 'ver-200.html'
+	of =  os.environ['DEVSITE'] + '/' + os.environ['APP'] + '/' + os.environ['APPSNAPHTMLDIR'] + '/' + 'versku-200.html'
 	self.c.logout()
 	fwrite = open( of ,'w')
 	fwrite.write (r.content);
 	fwrite.close()
 	#
 	# Non Existing sku
-	r = self.c.get('/sku/ver/5555/')
+	r = self.c.get(self.baseurl + self.viewurl + '5555/')
         self.assertEqual( r.status_code, 404  )
 	
     def testWst3(self):

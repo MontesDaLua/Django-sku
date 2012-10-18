@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-17 16:30+0100\n"
+"POT-Creation-Date: 2012-10-18 09:06+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,31 +30,31 @@ msgstr ""
 msgid "Internal Server Error"
 msgstr ""
 
-#: templates/sku-redirect-login.html:5 templates/sku-ver.html:5
+#: templates/sku-redirect-login.html:5 templates/sku-versku.html:5
 msgid "display ====sku"
 msgstr ""
 
-#: templates/sku-redirect-login.html:13 templates/sku-ver.html:13
+#: templates/sku-redirect-login.html:13 templates/sku-versku.html:13
 msgid "You are not logged in."
 msgstr ""
 
-#: templates/sku-redirect-login.html:14 templates/sku-ver.html:14
+#: templates/sku-redirect-login.html:14 templates/sku-versku.html:14
 msgid "Login"
 msgstr ""
 
-#: templates/sku-redirect-login.html:16 templates/sku-ver.html:16
+#: templates/sku-redirect-login.html:16 templates/sku-versku.html:16
 msgid "user"
 msgstr ""
 
-#: templates/sku-redirect-login.html:18 templates/sku-ver.html:18
+#: templates/sku-redirect-login.html:18 templates/sku-versku.html:18
 msgid "Log out"
 msgstr ""
 
-#: templates/sku-redirect-login.html:25 templates/sku-ver.html:25
+#: templates/sku-redirect-login.html:25 templates/sku-versku.html:26
 msgid "Home"
 msgstr ""
 
-#: templates/sku-redirect-login.html:26 templates/sku-ver.html:26
+#: templates/sku-redirect-login.html:26 templates/sku-versku.html:27
 msgid "Admin"
 msgstr ""
 
@@ -62,26 +62,26 @@ msgstr ""
 msgid "please login first "
 msgstr ""
 
-#: templates/sku-redirect-login.html:57 templates/sku-ver.html:64
+#: templates/sku-redirect-login.html:57 templates/sku-versku.html:65
 msgid "florida web design"
 msgstr ""
 
-#: templates/sku-ver.html:50
+#: templates/sku-versku.html:51
 msgid "Internal Code"
 msgstr ""
 
-#: templates/sku-ver.html:51
+#: templates/sku-versku.html:52
 msgid "Short Description"
 msgstr ""
 
-#: templates/sku-ver.html:52
+#: templates/sku-versku.html:53
 msgid "Description"
 msgstr ""
 
-#: templates/sku-ver.html:53
+#: templates/sku-versku.html:54
 msgid "Movement Unit"
 msgstr ""
 
-#: templates/sku-ver.html:54
+#: templates/sku-versku.html:55
 msgid "Id in Data Base "
 msgstr ""

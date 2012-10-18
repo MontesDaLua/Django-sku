@@ -7,8 +7,10 @@ body {
 	font-size: 13px;
 	color: #061C37;
 	background: #FF0F00;
+	/* 
 	background-image:url(images/background.png);
 	background-repeat:repeat-x;
+	*/
 }
 *
 {
